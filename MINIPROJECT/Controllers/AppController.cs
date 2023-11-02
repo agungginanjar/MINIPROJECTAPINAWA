@@ -45,7 +45,7 @@ namespace MINIPROJECT.Controllers
         {
             var db = await _context.APP.FindAsync(request.Id);
             if (db == null)
-                return BadRequest(" not found.");
+                return BadRequest("not found.");
 
             db.AP_REGNO = request.AP_REGNO;
             db.APPTYPEID = request.APPTYPEID;
